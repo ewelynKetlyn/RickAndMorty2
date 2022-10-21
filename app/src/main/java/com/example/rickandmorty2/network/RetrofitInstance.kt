@@ -17,5 +17,3 @@ object RetrofitInstance {
         retrofit.create(RetrofitService::class.java)
     }
 }
-
-//parei em 14:30

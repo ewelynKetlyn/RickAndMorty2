@@ -15,4 +15,10 @@
     <string name="txt_male">Male</string>
     <string name="txt_genderless">Genderless</string>
     <string name="txt_unknown">Unknown</string>
+    <string name="txt_error">%1$d - Character not find</string>
+
+    <!-- DetailFragment Strings -->
+    <string name="title_episodes">Episodes:</string>
+    <string name="title_origin">Origin</string>
+    <string name="title_location">Location</string>
 </resources>

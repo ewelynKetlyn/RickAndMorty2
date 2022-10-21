@@ -1,20 +1,21 @@
-package com.example.rickandmorty2.viewmodel
+package com.example.rickandmorty2.presentation.viewmodel
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.example.rickandmorty2.repository.Repository
+import com.example.rickandmorty2.repository.CharacterListRepository
 import com.example.rickandmorty2.model.CharacterList
 import kotlinx.coroutines.launch
 import retrofit2.Response
 
-class SharedViewModel(var repository: Repository): ViewModel() {
+class CharacterListViewModel(var repository: CharacterListRepository): ViewModel() {
     var listCharacter = MutableLiveData<Response<CharacterList>>()
 
-    fun getCharacter(page:Int){
+    fun getCharacterList(page:Int){
         viewModelScope.launch {
-            val character = repository.getCharacter(page)
-            listCharacter.value = character
+            listCharacter.value = repository.getCharacter(page)
         }
     }
 }
+
+// criar
