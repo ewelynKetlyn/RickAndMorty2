@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/listFragment"
-        android:name="com.example.rickandmorty2.presentation.ui.fragment.ListFragment"
+        android:name="com.example.rickandmorty2.presentation.characterlist.ListFragment"
         android:label="@string/app_name"
         tools:layout="@layout/fragment_list" >
         <action
@@ -24,7 +24,7 @@
         tools:layout="@layout/fragment_filter" />
     <fragment
         android:id="@+id/detailFragment"
-        android:name="com.example.rickandmorty2.presentation.ui.fragment.DetailFragment"
+        android:name="com.example.rickandmorty2.presentation.characterdetail.DetailFragment"
         android:label="fragment_detail"
         tools:layout="@layout/fragment_detail" />
 </navigation>
